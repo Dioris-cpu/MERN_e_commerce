@@ -16,7 +16,7 @@ export const productListReducer = (state = { products: [] }, action) => {
       return { loading: true, ...state};
     // IF SUCESSFUL SEND THE DATA TO THE PAYLOAD
     case PRODUCT_LIST_SUCCESS:
-      return { loading: false, product: action.payload };
+      return { loading: false, products: action.payload };
     // SEND ERROR TO THE PAYLOAD
     case PRODUCT_LIST_FAIL:
       return { loading: false, error: action.payload };
