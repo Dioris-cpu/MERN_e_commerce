@@ -28,10 +28,10 @@ export const productListReducer = (state = { products: [] }, action) => {
     switch (action.type) {
       // REQUEST DATA TO THE PAYLOAD
       case PRODUCT_DETAILS_REQUEST:
-        return { loading: true, products: [] };
+        return { loading: true, ...state };
       // IF SUCESSFUL SEND THE DATA TO THE PAYLOAD
       case PRODUCT_DETAILS_SUCCESS:
-        return { loading: false, products: action.payload };
+        return { loading: false, product: action.payload };
       // SEND ERROR TO THE PAYLOAD
       case PRODUCT_DETAILS_FAIL:
         return { loading: false, error: action.payload };
