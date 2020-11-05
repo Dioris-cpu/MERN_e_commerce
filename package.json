@@ -1,5 +1,5 @@
 {
-  "name": "proshop",
+  "name": "myshop",
   "version": "1.0.0",
   "description": "MERN shopping cart app",
   "main": "server.js",
@@ -13,7 +13,7 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Brad Traversy",
+  "author": "Dioris",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.0",
@@ -30,7 +30,6 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-paypal-button-v2": "^2.6.2",
     "react-redux": "^7.2.2",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
@@ -40,7 +39,9 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.6"
   }
 }
