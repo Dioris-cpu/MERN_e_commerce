@@ -1,9 +1,6 @@
 {
   "name": "myshop",
   "version": "1.0.0",
-  "engines": {
-    "node": "14.9.0"
-  },
   "description": "MERN shopping cart app",
   "main": "server.js",
   "type": "module",
@@ -16,10 +13,9 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Dioris",
+  "author": "Brad Traversy",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.0",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
@@ -28,23 +24,10 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.6",
     "morgan": "^1.10.0",
-    "multer": "^1.4.2",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-redux": "^7.2.2",
-    "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^1.1.1",
-    "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "multer": "^1.4.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "concurrently": "^5.3.0",
-    "eslint": "^6.8.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.4"
   }
 }
