@@ -23,3 +23,4 @@ their products/merchandise electronically in a very hands on and user friendly w
 - MongoDB
 - Redux
 
+![](gif/myShop2.gif)
