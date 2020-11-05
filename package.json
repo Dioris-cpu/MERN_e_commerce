@@ -1,6 +1,9 @@
 {
   "name": "myshop",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.9.0"
+  },
   "description": "MERN shopping cart app",
   "main": "server.js",
   "type": "module",
